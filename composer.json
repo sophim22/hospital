@@ -1,5 +1,8 @@
-- name: Validate composer.json and composer.lock
-  run: cd hms-backend && composer validate --strict
+{
+    "name": "realwat/hospital",
+    "description": "Hospital Management System",
+    "minimum-stability": "stable",
+    "require": {},
+    "license": "proprietary"
+}
 
-- name: Install dependencies
-  run: cd hms-backend && composer install --prefer-dist --no-progress
